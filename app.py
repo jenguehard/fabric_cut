@@ -8,6 +8,8 @@ df = pd.read_csv("tissu.csv").drop("Unnamed: 0", axis = 1)
 
 st.dataframe(df)
 
+st.title("Application de découpe de tissu ✂")
+
 st.title("Choisis le tissu découpé :")
 
 tissu = st.selectbox("Tissu", df.Tissu.values)
