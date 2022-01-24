@@ -18,7 +18,7 @@ if tissu :
     if actual_length == 0:
         st.text("Il n'y a plus de " + str(tissu) + " en stock.")
     else :
-        st.title("Choisis la longueur à découper :")
+        st.title("Choisis la longueur à découper : :straight_ruler:")
         to_cut = st.slider("Longueur à découper", min_value = 0, max_value = int(actual_length))
         st.text("La longueur découpée est de " + str(to_cut) + " m.")
         new_length = int(int(actual_length) - int(to_cut))
