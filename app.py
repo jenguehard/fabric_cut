@@ -2,13 +2,11 @@ import streamlit as st
 import pandas as pd
 from datetime import datetime
 
-st.title("Mise à jour stock Tissu")
+st.title("Mise à jour stock Tissu :scissors: :shirt:")
 
 df = pd.read_csv("tissu.csv").drop("Unnamed: 0", axis = 1)
 
 st.dataframe(df)
-
-st.title("Application de découpe de tissu ✂")
 
 st.title("Choisis le tissu découpé :")
 
